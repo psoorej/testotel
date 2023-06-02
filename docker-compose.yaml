@@ -13,7 +13,7 @@ services:
     ports:
       - "4317:4317"
     volumes:
-      - otelcol\config.yaml:/etc/otelcol-contrib/config.yaml
+      - .\otelcol\config.yaml:/etc/otelcol-contrib/config.yaml
 
   otel-javaagent:
     container_name: otel-javaagent
